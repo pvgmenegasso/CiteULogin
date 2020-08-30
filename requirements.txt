@@ -13,3 +13,4 @@ tqdm==4.48.2
 urllib3==1.25.10
 webdriver-manager==3.2.2
 webdrivermanager==0.8.0
+geckodriver-autoinstaller==0.1.0
