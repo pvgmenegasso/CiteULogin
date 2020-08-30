@@ -1,7 +1,7 @@
 
 
 from selenium import webdriver
-from webdriver_manager.firefox import GeckoDriverManager
+import geckodriver_autoinstaller
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -30,11 +30,11 @@ element_for_submit="input type =submit"
 
 ###########################################################
 
-
+geckodriver_autoinstaller.install()
 
 ##browser = webdriver.Safari()	#for macOS users[for others use chrome vis chromedriver]
 #browser = webdriver.Chrome()	#uncomment this line,for chrome users
-browser = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+browser = webdriver.Firefox()
 browser.get((website_link))	
 
 
